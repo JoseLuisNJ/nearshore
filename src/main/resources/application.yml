@@ -1,0 +1,17 @@
+server:
+  port: 28080
+spring:
+  application:
+    name: nearshore-data-service
+  
+  datasource:
+    url: jdbc:mysql://172.17.0.3/nearshore
+    username: root
+    password: tom
+    driverClassName: com.mysql.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate.ddl-auto: update
+    
